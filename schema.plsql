@@ -285,3 +285,32 @@ CREATE USER NV25 IDENTIFIED BY 123456
 DEFAULT TABLESPACE users TEMPORARY TABLESPACE temp
 QUOTA 20M ON users
 ACCOUNT UNLOCK;
+
+--Dieu chinh lai bang kieu du lieu cot Luong trong bang NhanVien (phuc vu lam security1)
+ALTER TABLE system.NhanVien DROP COLUMN luong;
+ALTER TABLE system.NhanVien ADD luong VARCHAR2(128);
+UPDATE NhanVien SET luong = '1000000' WHERE maNV = 'NV1';
+UPDATE NhanVien SET luong = '2000000' WHERE maNV = 'NV2';
+UPDATE NhanVien SET luong = '3000000' WHERE maNV = 'NV3';
+UPDATE NhanVien SET luong = '4000000' WHERE maNV = 'NV4';
+UPDATE NhanVien SET luong = '5000000' WHERE maNV = 'NV5';
+UPDATE NhanVien SET luong = '6000000' WHERE maNV = 'NV6';
+UPDATE NhanVien SET luong = '7000000' WHERE maNV = 'NV7';
+UPDATE NhanVien SET luong = '8000000' WHERE maNV = 'NV8';
+UPDATE NhanVien SET luong = '9000000' WHERE maNV = 'NV9';
+UPDATE NhanVien SET luong = '10000000' WHERE maNV = 'NV10';
+UPDATE NhanVien SET luong = '11000000' WHERE maNV = 'NV11';
+UPDATE NhanVien SET luong = '12000000' WHERE maNV = 'NV12';
+UPDATE NhanVien SET luong = '13000000' WHERE maNV = 'NV13';
+UPDATE NhanVien SET luong = '14000000' WHERE maNV = 'NV14';
+UPDATE NhanVien SET luong = '15000000' WHERE maNV = 'NV15';
+UPDATE NhanVien SET luong = '16000000' WHERE maNV = 'NV16';
+UPDATE NhanVien SET luong = '17000000' WHERE maNV = 'NV17';
+UPDATE NhanVien SET luong = '18000000' WHERE maNV = 'NV18';
+UPDATE NhanVien SET luong = '19000000' WHERE maNV = 'NV19';
+UPDATE NhanVien SET luong = '20000000' WHERE maNV = 'NV20';
+UPDATE NhanVien SET luong = '21000000' WHERE maNV = 'NV21';
+UPDATE NhanVien SET luong = '22000000' WHERE maNV = 'NV22';
+UPDATE NhanVien SET luong = '23000000' WHERE maNV = 'NV23';
+UPDATE NhanVien SET luong = '24000000' WHERE maNV = 'NV24';
+UPDATE NhanVien SET luong = '25000000' WHERE maNV = 'NV25';
